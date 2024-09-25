@@ -1,0 +1,16 @@
+EVALUATE
+VAR vTabela = 
+    SUMMARIZE(
+        TB_ProcessosSeletivos,
+        TB_ProcessosSeletivos[CAT],
+        "VagasTotais", [Vagas Totais]
+    )
+
+VAR vTOP1 = 
+    TOPN(
+        1,
+        vTabela,
+        [VagasTotais],DESC
+    )
+RETURN
+vTOP1

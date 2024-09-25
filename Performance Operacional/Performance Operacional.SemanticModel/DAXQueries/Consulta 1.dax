@@ -1,0 +1,30 @@
+EVALUATE
+VAR vTabela = 
+    SUMMARIZE(
+        TB_ProcessosSeletivos,
+        TB_ProcessosSeletivos[CATEGORIA],
+        "VagasTotais", CALCULATE(
+    SUM(TB_ProcessosSeletivos[total_vagas]),
+    FILTER(TB_ProcessosSeletivos,
+    TB_ProcessosSeletivos[Grupo Econômico] = "DANONE"
+    )
+    )
+	)
+
+VAR CategoriaMaiorVaga = 
+    TOPN(
+        2,
+        vTabela,
+        [VagasTotais], 
+        0
+    )
+VAR Filtro = FILTER(CategoriaMaiorVaga,[VagasTotais] = {MINX(CategoriaMaiorVaga,[VagasTotais])})
+
+VAR Categoria = 
+    SELECTCOLUMNS(
+        Filtro,
+        "Categoria", TB_ProcessosSeletivos[CATEGORIA]
+    )
+	
+RETURN
+{MINX(Categoria,[Categoria])}

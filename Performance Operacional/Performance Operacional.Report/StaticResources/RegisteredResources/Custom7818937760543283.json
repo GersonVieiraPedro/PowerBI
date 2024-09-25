@@ -1,0 +1,29 @@
+{
+  "name": "Custom",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "border": [
+          {
+            "color": {
+              "solid": {
+                "color": "#737272"
+              }
+            },
+            "show": false
+          }
+        ]
+      }
+    }
+  },
+  "dataColors": [
+    "#8A8A8A",
+    "#12239E",
+    "#9736E6",
+    "#6B007B",
+    "#E044A7",
+    "#744EC2",
+    "#D9B300",
+    "#D64550"
+  ]
+}

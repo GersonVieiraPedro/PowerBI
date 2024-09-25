@@ -1,0 +1,9 @@
+EVALUATE
+VAR vTabela = 
+    SUMMARIZE(
+        TB_ProcessosSeletivos,
+        TB_ProcessosSeletivos[CATEGORIA],
+        "VagasTotais", [Vagas Totais]
+    )
+RETURN
+vTabela

@@ -1,0 +1,11 @@
+EVALUATE
+	CALCULATETABLE(
+	FILTER(
+		SELECTCOLUMNS(TB_Funcionarios,
+			TB_Funcionarios[CodigoFuncionario],
+			TB_Funcionarios[Grupos],
+			"DiasVencimento", [Dias Até o Vencimento]
+		),
+		[DiasVencimento]>=0 &&
+		NOT(ISBLANK([DiasVencimento]))
+	)

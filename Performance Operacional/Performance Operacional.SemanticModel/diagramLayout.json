@@ -1,0 +1,204 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 1074.0544331060817
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 932.96394483973643,
+            "y": 2859.8610905405726
+          },
+          "nodeIndex": "TB_ProcessosSeletivos",
+          "nodeLineageTag": "8acbf33f-c2a6-4e98-a621-bb2dd9eba637",
+          "size": {
+            "height": 272,
+            "width": 259.33333333333348
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 281,
+            "y": 2356.3755954123271
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "fd658a56-35d6-4ac8-a622-2d4ee829dadb",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 1306.4171407707859,
+            "y": 2644.0239372409442
+          },
+          "nodeIndex": "TB_Contratacoes",
+          "nodeLineageTag": "c73d1642-4819-4f48-bba9-6ca9bb346edc",
+          "size": {
+            "height": 485.38052585792047,
+            "width": 234
+          },
+          "zIndex": 13
+        },
+        {
+          "location": {
+            "x": 626.552239345282,
+            "y": 2089.0817017738009
+          },
+          "nodeIndex": "TB_Clientes",
+          "nodeLineageTag": "06ac820b-1781-47ea-a57d-6a90c8e923c2",
+          "size": {
+            "height": 187.44753787197681,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 929.5851585761576,
+            "y": 2153.708931288792
+          },
+          "nodeIndex": "TB_Funcionarios",
+          "nodeLineageTag": "c849b03f-9f28-4268-910f-29646ee13ee1",
+          "size": {
+            "height": 300,
+            "width": 273.50252871380258
+          },
+          "zIndex": 14
+        },
+        {
+          "location": {
+            "x": 930.23070542295545,
+            "y": 2543.33422443681
+          },
+          "nodeIndex": "DimCalendario",
+          "nodeLineageTag": "616e6131-2e00-48cb-9aaa-9787526d923a",
+          "size": {
+            "height": 200,
+            "width": 271.9224275652507
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 1606.660450824812,
+            "y": 2963.2579404591143
+          },
+          "nodeIndex": "TB_Organização",
+          "nodeLineageTag": "ecba6a7e-ec2e-41f3-b97c-ed1b7bbad16c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 1600.4302159199644,
+            "y": 2308.1155393777381
+          },
+          "nodeIndex": "TB_Horario",
+          "nodeLineageTag": "c987c023-b78a-47c3-88f9-6a1555b1659c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1603.8691879574083,
+            "y": 2637.842189611405
+          },
+          "nodeIndex": "TB_Regiao",
+          "nodeLineageTag": "cc700400-88fc-40d2-8e1f-c53a45737fd9",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1298.4210206232935,
+            "y": 2301.6007247502621
+          },
+          "nodeIndex": "TB_CentroCusto",
+          "nodeLineageTag": "dd1472bb-2dda-470e-b6a5-88b648fa42bf",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 344.74280616585366,
+            "y": 2648.0314740887843
+          },
+          "nodeIndex": "TB_IdentidadeVisual",
+          "nodeLineageTag": "3f33152f-e0e4-45e0-bf8a-9f941ecdc532",
+          "size": {
+            "height": 205.51627915705922,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 627.3337566841725,
+            "y": 2530.1574631527374
+          },
+          "nodeIndex": "TB_RLS",
+          "nodeLineageTag": "ba498703-b9ea-4051-8ddc-82af7d888a20",
+          "size": {
+            "height": 205.33048400537382,
+            "width": 234
+          },
+          "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 1609.660450824812,
+            "y": 1919.9549324613033
+          },
+          "nodeIndex": "Parâmetro",
+          "nodeLineageTag": "3d77fac8-f7d7-4a7d-8ac9-529a4f90c0de",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 935.9642841294044,
+            "y": 1915.336121279377
+          },
+          "nodeIndex": "DIM_Nivel",
+          "nodeLineageTag": "d0a906b1-bb7f-4ce7-acc8-ed1f8e6ea68f",
+          "size": {
+            "height": 176,
+            "width": 259.14041486174892
+          },
+          "zIndex": 1
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 47.731909222619812,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

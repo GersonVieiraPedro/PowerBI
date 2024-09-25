@@ -1,0 +1,41 @@
+EVALUATE
+VAR vTabela = 
+	FILTER(
+    SUMMARIZE(
+        DIM_Nivel,
+        DIM_Nivel[Nivel],
+        "Media_Salarial",
+		 CALCULATE(
+    	AVERAGE(TB_Funcionarios[Salario]),
+    	TB_Funcionarios[Grupo Econômico] = "BAYER"
+)
+    ),DIM_Nivel[Nivel]<>BLANK()
+	)
+	
+VAR vRank = 
+	ADDCOLUMNS(vTabela,
+	"Rank", RANKX(vTabela,[Media_Salarial],,DESC)
+	)
+	
+VAR vTabelaCor =
+	ADDCOLUMNS(vRank,
+	"Cor", 
+	SWITCH(
+		[Rank],
+		1, [Cor Primaria],
+		2, [Cor Secundaria],
+		3, [Cor Secundaria] & "E6",
+		4, [Cor Secundaria] & "CC",
+		5, [Cor Secundaria] & "B3",
+		6, [Cor Secundaria] & "99",
+		7, [Cor Secundaria] & "80",
+		8, [Cor Secundaria] & "66",
+		9, [Cor Secundaria] & "4D",
+	   10, [Cor Secundaria] & "33",
+	   "#807e7e"
+	)
+)
+RETURN
+vTabelaCor
+ORDER BY [Rank] ASC
+

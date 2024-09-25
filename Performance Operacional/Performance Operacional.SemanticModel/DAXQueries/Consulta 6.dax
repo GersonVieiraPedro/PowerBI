@@ -1,0 +1,23 @@
+DEFINE
+	VAR __DS0FilterTable = 
+		TREATAS({"BAYER"}, 'TB_IdentidadeVisual'[Name])
+
+	VAR __DS0FilterTable2 = 
+		TREATAS({"'Medidas'[Colaboradores Ativos]"}, 'Parâmetro'[Parâmetro Campos])
+
+	VAR __DS0Core = 
+		SUMMARIZECOLUMNS(
+			ROLLUPADDISSUBTOTAL('DIM_Nivel'[Nivel], "IsGrandTotalRowTotal"),
+			__DS0FilterTable,
+			__DS0FilterTable2,
+			"Cor_Nivel", 'Medidas'[Cor Nivel]
+		)
+
+	VAR __DS0PrimaryWindowed = 
+		TOPN(502, __DS0Core, [IsGrandTotalRowTotal], 0, [Cor_Nivel], 0, 'DIM_Nivel'[Nivel], 1)
+
+EVALUATE
+	__DS0PrimaryWindowed
+
+ORDER BY
+	[IsGrandTotalRowTotal] DESC, [Cor_Nivel] DESC, 'DIM_Nivel'[Nivel]
